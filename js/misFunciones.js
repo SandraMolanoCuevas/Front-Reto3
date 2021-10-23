@@ -1,6 +1,6 @@
 function traerInformacionCategorias(){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://129.151.105.93/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -34,7 +34,7 @@ function guardarInformacionCategorias(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
 
-        url:"http://localhost:8080/api/Category/save",
+        url:"http://129.151.105.93/api/Category/save",
 
 
         success:function(response) {
@@ -57,7 +57,7 @@ function guardarInformacionCategorias(){
 ///=======================================================ortopedics=============================
 function traerInformacionOrtopedics(){
     $.ajax({
-        url:"http://localhost:8080/api/Ortopedic/all",
+        url:"http://129.151.105.93/api/Ortopedic/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -96,7 +96,7 @@ function guardarInformacionOrtopedics(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
 
-        url:"http://localhost:8080/api/Ortopedic/save",
+        url:"http://129.151.105.93/api/Ortopedic/save",
 
 
         success:function(response) {
@@ -119,7 +119,7 @@ function guardarInformacionOrtopedics(){
 ///===================================================clients ========================
 function traerInformacionClients(){
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://129.151.105.93/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -160,7 +160,7 @@ function guardarInformacionClients(){
         dataType: 'JSON',
         data: JSON.stringify(var4),
 
-        url:"http://localhost:8080/api/Client/save",
+        url:"http://129.151.105.93/api/Client/save",
 
 
         success:function(response) {
@@ -184,7 +184,7 @@ function guardarInformacionClients(){
 //==================================================messages=========================
 function traerInformacionMessages(){
     $.ajax({
-        url:"http://localhost:8080/api/Message/all",
+        url:"http://129.151.105.93/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -217,7 +217,7 @@ function guardarInformacionMessages(){
         dataType: 'JSON',
         data: JSON.stringify(var5),
 
-        url:"http://localhost:8080/api/Message/save",
+        url:"http://129.151.105.93/api/Message/save",
 
 
         success:function(response) {
@@ -240,7 +240,7 @@ function guardarInformacionMessages(){
 //======================================================reservations=====================
 function traerInformacionReservations(){
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/all",
+        url:"http://129.151.105.93/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -278,7 +278,7 @@ function guardarInformacionReservations(){
         dataType: 'JSON',
         data: JSON.stringify(var6),
 
-        url:"http://localhost:8080/api/Reservation/save",
+        url:"http://129.151.105.93/api/Reservation/save",
 
 
         success:function(response) {
@@ -301,7 +301,7 @@ function guardarInformacionReservations(){
 //===========================================ADMINI===================================================================
 function traerInformacionAdmins(){
     $.ajax({
-        url:"http://localhost:8080/api/Admin/all",
+        url:"http://129.151.105.93/api/Admin/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -337,7 +337,7 @@ function guardarInformacionAdmins(){
         dataType: 'JSON',
         data: JSON.stringify(var7),
 
-        url:"http://localhost:8080/api/Admin/save",
+        url:"http://129.151.105.93/api/Admin/save",
 
 
         success:function(response) {
@@ -370,7 +370,7 @@ function borrar(idElemento){
     $.ajax({
           dataType:'json',
           data:dataToSend,
-          url:"http://localhost:8080/api/Reservation/1",
+          url:"http://129.151.105.93/api/Reservation/1",
           type:'DELETE',
           contentType:'application/json',
           success:function(response) {
